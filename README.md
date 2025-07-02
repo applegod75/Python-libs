@@ -12,6 +12,8 @@ FileUtils:
 calc:
     I made this to add most math functions you'd find on a calculator to python.
     This is surprisingly hard, so will take a while to finish.
+    can be installed using: pip install -i https://test.pypi.org/simple/ calc-applegod==0.0.1
+    I'll soon upload it to the main servers
 
     requirements:
     -random (default)
