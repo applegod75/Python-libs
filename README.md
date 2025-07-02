@@ -1,9 +1,12 @@
 # Python-libs
 some nice python libraries I made. Use them to make your life easier :)
 
-FileUtils:
+FolderUtils:
     I made this to make writing to files easier. Gives simple access to writing,
-    removing and creating files. Also allows you to create and remove directories
+    removing and creating files. Also allows you to create and remove directories.
+    Can be installed using: pip install -i https://test.pypi.org/simple/ FolderUtils-applegod==0.0.1
+    I'll upload it to the main pypi servers when every package is built.
+
 
     requirements:  
     -os     (default)

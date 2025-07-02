@@ -3,12 +3,12 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "FileUtils_applegod"
+name = "FolderUtils_applegod"
 version = "0.0.1"
 authors = [
   { name="applegod", email="chrsbuitendijk@gmail.com" },
 ]
-description = "A small package including mathematical functions"
+description = "A small package including file editing options"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
