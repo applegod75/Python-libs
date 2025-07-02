@@ -13,7 +13,7 @@ calc:
     I made this to add most math functions you'd find on a calculator to python.
     This is surprisingly hard, so will take a while to finish.
     can be installed using: pip install -i https://test.pypi.org/simple/ calc-applegod==0.0.1
-    I'll soon upload it to the main servers
+    I'll soon upload it to the main pypi servers
 
     requirements:
     -random (default)
@@ -26,7 +26,8 @@ throw:
 
     no requirements
 
-None of this is built yet. I'm still figuring that out.
+only calc is built yet. And not even uploaded to the main pypi servers.
 If you want to use any of these files, paste them into the same directory you have your python files,
+(or just run the commands i added to every package i built and uploaded)
 and then at the beginning of your file, just do "import <python-lib>" make sure to leave the .py 
 extension out of the import statement
