@@ -1,4 +1,3 @@
-import csv
 import os
 import shutil
 
@@ -7,7 +6,7 @@ def log(x, y = None):
    """  Logs whatever you put in X to the console
 
         Logs whatever you put in X to the console, as
-        long as Y is None
+        long as Y is None. Mostly used inside the library
    """
    if y == None:
     print(x)
@@ -57,3 +56,14 @@ def RemoveDirectory(x: str, y = "e", z = None):
             print("Invalid parameter")
     except:
         print("Invalid directory")
+
+def GetFilesInDir(x: str, y = None) -> list:
+    """ Gets all the filenames in directory 'x'
+
+        Returns all the filenames in a list.
+        Logs all of the filenames as long as you leave 'y'
+        empty
+    """
+    files = os.listdir(x)
+    log(files, y)
+    return files
