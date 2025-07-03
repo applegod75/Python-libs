@@ -77,7 +77,7 @@ def GetAllFilesInDir(x = None, y = None) -> list:
     folders = []
 
     topLayer = os.listdir(cwd)
-    log(topLayer)
+    log(topLayer, y)
 
     for file in topLayer:
         i = 0
@@ -91,5 +91,8 @@ def GetAllFilesInDir(x = None, y = None) -> list:
     print(folders)
 
     for i in folders:
-        nextlayer = os.listdir(f"{cwd}/{i}")
-        print(nextlayer)
+        try:
+            nextlayer = os.listdir(f"{cwd}/{i}")
+            log(nextlayer, y)
+        except:
+            print(f"no file access to folder {cwd}/{i}")
