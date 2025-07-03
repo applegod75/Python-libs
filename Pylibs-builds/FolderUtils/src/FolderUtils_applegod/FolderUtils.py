@@ -93,5 +93,3 @@ def GetAllFilesInDir(x = None, y = None) -> list:
     for i in folders:
         nextlayer = os.listdir(f"{cwd}/{i}")
         print(nextlayer)
-
-GetAllFilesInDir("C:/Users/Chris Buitendijk 2G1/Documents")
