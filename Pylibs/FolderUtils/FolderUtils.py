@@ -67,3 +67,32 @@ def GetFilesInDir(x: str, y = None) -> list:
     files = os.listdir(x)
     log(files, y)
     return files
+
+def GetAllFilesInDir(x = None, y = None) -> list:
+    if x == None:
+        cwd = os.getcwd()
+    else:
+        cwd = x
+    
+    folders = []
+
+    topLayer = os.listdir(cwd)
+    log(topLayer)
+
+    for file in topLayer:
+        i = 0
+        if file.__contains__('.') or file == "LICENSE":
+            pass
+        else:
+            print(f"folder {file} found")
+            folders.insert(0, file)
+            print(folders)
+        i += 1
+
+    for i in folders:
+        num = 0
+        nextlayer = os.listdir(f"{cwd}\\{i}")
+        print(nextlayer)
+        num += 1
+
+GetAllFilesInDir()
