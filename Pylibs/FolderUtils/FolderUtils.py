@@ -80,14 +80,14 @@ def GetAllFilesInDir(x = None, y = None) -> list:
     log(topLayer, y)
 
     for file in topLayer:
-        i = 0
         if file.__contains__('.') or file == "LICENSE":
             pass
         else:
             folders.insert(0, file)
-        i += 1
     
     print(f"{folders}\n")
+
+    extralayer = []
 
     for i in folders:
         try:
@@ -96,11 +96,14 @@ def GetAllFilesInDir(x = None, y = None) -> list:
             log(f"{nextlayer}\n")
         except:
             print(f"no file access to folder {cwd}/{i}\n")
-    
-    for i in nextlayer:
+    print(f"extra layer: {extralayer}")
+
+    for i in extralayer:
         try:
             layer = os.listdir(f"{cwd}/{i}")
             log(f"{i},")
             log(f"{layer}\n")
         except:
             print(f"no file access to folder {cwd}/{i}\n")
+
+GetAllFilesInDir('C:/Users/Chris Buitendijk 2G1/Documents/GitHub/Python-libs')
