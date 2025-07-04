@@ -87,12 +87,22 @@ def GetAllFilesInDir(x = None, y = None) -> list:
             folders.insert(0, file)
         i += 1
     
-    print(folders)
+    print(f"{folders}\n")
 
     for i in folders:
         try:
             nextlayer = os.listdir(f"{cwd}/{i}")
             log(f"{i},")
-            log(nextlayer, y)
+            log(f"{nextlayer}\n")
         except:
-            print(f"no file access to folder {cwd}/{i}")
+            print(f"no file access to folder {cwd}/{i}\n")
+    
+    for i in nextlayer:
+        try:
+            layer = os.listdir(f"{cwd}/{i}")
+            log(f"{i},")
+            log(f"{layer}\n")
+        except:
+            print(f"no file access to folder {cwd}/{i}\n")
+
+GetAllFilesInDir('C:/Users/Chris Buitendijk 2G1/Documents')
