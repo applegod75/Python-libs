@@ -104,5 +104,3 @@ def GetAllFilesInDir(x = None, y = None) -> list:
             log(f"{layer}\n")
         except:
             print(f"no file access to folder {cwd}/{i}\n")
-
-GetAllFilesInDir('C:/Users/Chris Buitendijk 2G1/Documents')
