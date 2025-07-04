@@ -84,7 +84,6 @@ def GetAllFilesInDir(x = None, y = None) -> list:
         if file.__contains__('.') or file == "LICENSE":
             pass
         else:
-            print(f"folder {file} found")
             folders.insert(0, file)
         i += 1
     
@@ -93,6 +92,7 @@ def GetAllFilesInDir(x = None, y = None) -> list:
     for i in folders:
         try:
             nextlayer = os.listdir(f"{cwd}/{i}")
+            log(f"{i},")
             log(nextlayer, y)
         except:
             print(f"no file access to folder {cwd}/{i}")
